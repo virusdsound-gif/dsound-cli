@@ -1,0 +1,40 @@
+#!/bin/bash
+
+COMMAND=$1
+shift
+
+case $COMMAND in
+  nft)
+    echo "🖼️ NFT Marketplace Tools"
+    echo "  dsound nft mint \"Name\" \"Tag\""
+    echo "  dsound nft list <tokenId> <price>"
+    echo "  dsound nft buy <tokenId>"
+    ;;
+
+  list)
+    if [ -z "$1" ]; then
+      echo "Usage: dsound list <tokenId> <price_in_PaC>"
+    else
+      python -c "
+from essentium_web3 import EssentiumWeb3
+EssentiumWeb3().list_nft(int('$1'), int('$2'))
+"
+    fi
+    ;;
+
+  buy)
+    if [ -z "$1" ]; then
+      echo "Usage: dsound buy <tokenId>"
+    else
+      python -c "
+from essentium_web3 import EssentiumWeb3
+EssentiumWeb3().buy_nft(int('$1'))
+"
+    fi
+    ;;
+
+  *)
+    echo "Essentium CLI v12.1 — NFT Marketplace Active"
+    echo "Use: dsound nft"
+    ;;
+esac
