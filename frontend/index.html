@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Essentium Dashboard</title>
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+  <style>
+    body { font-family: monospace; padding: 20px; background: #000; color: #0f0; }
+    button { padding: 10px 20px; background: #0f0; color: #000; border: none; cursor: pointer; margin: 10px 0; }
+    input { padding: 10px; width: 300px; background: #111; color: #0f0; border: 1px solid #0f0; }
+    #events { margin-top: 20px; border-top: 1px solid #0f0; padding-top: 10px; }
+    .event { margin: 10px 0; padding: 10px; border: 1px solid #0f0; }
+  </style>
+</head>
+<body>
+  <h1>D'sound Essentium Grid</h1>
+  <button onclick="connect()">Connect MetaMask</button>
+  <div id="status"></div>
+  <br>
+  <input type="text" id="prompt" placeholder="Enter prompt" value="D'sound frequency cascade">
+  <button onclick="generate()">Generate & Reward</button>
+  <div id="result"></div>
+  <div id="events"></div>
+
+  <script>
+    const ABI = [
+      "function generateAndReward(string memory prompt) public returns (uint256)",
+      "event SystemEvent(string indexed eventType, address indexed user, uint256 value, uint256 timestamp)",
+      "event SoundGenerated(address indexed user, uint256 deltaM, uint256 pacTokens, uint256 timestamp)"
+    ];
+    const ADDRESS = "YOUR_CONTRACT_ADDRESS";
+    let contract, signer;
+
+    async function connect() {
+      try {
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        await provider.send("eth_requestAccounts", []);
+        signer = provider.getSigner();
+        contract = new ethers.Contract(ADDRESS, ABI, signer);
+        document.getElementById('status').innerText = 'Connected: ' + await signer.getAddress();
+        listen();
+      } catch (e) {}
+    }
+
+    async function generate() {
+      try {
+        const prompt = document.getElementById('prompt').value;
+        const tx = await contract.generateAndReward(prompt);
+        const receipt = await tx.wait();
+        document.getElementById('result').innerHTML = `<div class="event">Prompt: ${prompt}<br>Tx: ${tx.hash}</div>`;
+      } catch (e) {}
+    }
+
+    function listen() {
+      try {
+        contract.on('SystemEvent', (eventType, user, value, timestamp) => {
+          try {
+            const div = document.createElement('div');
+            div.className = 'event';
+            div.innerHTML = `Action: ${eventType}<br>Value: ${ethers.utils.formatEther(value)}`;
+            document.getElementById('events').prepend(div);
+          } catch (e) {}
+        });
+
+        contract.on('SoundGenerated', (user, deltaM, pacTokens, timestamp) => {
+          try {
+            const div = document.createElement('div');
+            div.className = 'event';
+            div.innerHTML = `SoundGenerated<br>ΔM: ${deltaM.toString()}<br>PaC: ${pacTokens.toString()}`;
+            document.getElementById('events').prepend(div);
+          } catch (e) {}
+        });
+      } catch (e) {}
+    }
+  </script>
+</body>
+</html>

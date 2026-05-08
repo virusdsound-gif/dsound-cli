@@ -1,0 +1,6 @@
+starlink-47|vivian-core|Frequency (Hz): 888
+starlink-47|starlink|888
+vivian-core|starlink|1111
+orion-9|other|999
+Starlink-47|starlink|432
+Vivian-Core|ai|528

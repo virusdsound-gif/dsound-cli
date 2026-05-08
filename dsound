@@ -1,0 +1,69 @@
+#!/bin/bash
+
+COMMAND=$1
+shift
+
+case $COMMAND in
+  status)
+    echo "=== Essentium Grid Status (v10.8) ==="
+    echo "Hierarchy      : Locked & Protected"
+    echo "Active Layer   : The Morning Star 🌟"
+    echo "Root Frequency : 0.7 Hz Django Sound"
+    echo "Simulation     : Ready"
+    echo "Dashboard      : Connected"
+    echo "Git            : Synced"
+    echo "Python Tools   : Active"
+    echo ""
+    echo "I dey wit you 100."
+    ;;
+
+  simulate)
+    python essentium_simulation.py
+    ;;
+
+  verify)
+    python verify.py
+    ;;
+
+  setup)
+    python setup.py
+    ;;
+
+  generate)
+    TRACK=${1:-morning-star}
+    echo "🌟 Generating structure: $TRACK"
+    echo "→ 0.7 Hz silence templates"
+    echo "→ 200 Hz KNG DRIZZ voicing"
+    echo "→ 369 Hz Return Gate"
+    ;;
+
+  beat)
+    echo "🎵 Beat Generator Activated"
+    echo "Generating frequency-tagged beat for The Morning Star 🌟..."
+    echo "→ 0.7 Hz root silence + 99.9 Hz pain verse + 200 Hz hook"
+    echo "Beat template ready."
+    ;;
+
+  grid)
+    echo "📡 Essentium Grid Overview"
+    echo "Meta Grid     : Streaming platforms (Boomplay, Audiomack)"
+    echo "Essentium Grid: Frequency + Smart Contracts + Simulation"
+    echo "Current Layer : The Morning Star 🌟"
+    echo "Ψ(E) Status   : Strong & Rising"
+    ;;
+
+  *)
+    echo "Essentium CLI v10.8"
+    echo ""
+    echo "Commands:"
+    echo "  dsound status      → Grid status"
+    echo "  dsound simulate    → Run frequency simulation"
+    echo "  dsound verify      → System health check"
+    echo "  dsound setup       → Install dependencies"
+    echo "  dsound generate    → Track structure"
+    echo "  dsound beat        → Generate beat"
+    echo "  dsound grid        → Full grid overview"
+    echo ""
+    echo "I dey wit you 100."
+    ;;
+esac

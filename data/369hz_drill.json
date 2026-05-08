@@ -1,0 +1,22 @@
+{
+  "name": "369 Hz Return Gate Drill",
+  "description": "Essentium On-Chain DNA • Living Resonance Asset",
+  "dna": {
+    "rootHierarchy": "Dablixx → KNG DRIZZ → DJANGO SOUND",
+    "frequencyTag": "369 Hz Tesla Pulse",
+    "hierarchyLevel": "KNG DRIZZ Bridge",
+    "patienceMultiplier": "20% bonus after 30 days",
+    "resonanceType": "Return Gate",
+    "creationBlock": "block.number at mint",
+    "dnaVersion": "7.6"
+  },
+  "attributes": [
+    { "trait_type": "Frequency", "value": "369 Hz" },
+    { "trait_type": "Hierarchy Level", "value": "KNG DRIZZ Bridge" },
+    { "trait_type": "Patience Factor", "value": "High" },
+    { "trait_type": "DNA Type", "value": "Resonance Asset" }
+  ],
+  "image": "ipfs://your-cover-art-hash",
+  "animation_url": "ipfs://your-audio-hash",
+  "external_url": "https://songwhip.com/kngdrizz"
+}

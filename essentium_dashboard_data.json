@@ -1,0 +1,220 @@
+{
+  "simulation_date": "2026-05-07T21:32:43.739950",
+  "current_psi_e": 559.37,
+  "peak_psi_e": 559.37,
+  "days": 180,
+  "morning_star_active": true,
+  "dominant_layer": "The Morning Star \ud83c\udf1f",
+  "last_30_days": [
+    {
+      "day": 151,
+      "psi_e": 540.99,
+      "suppression": 0.8,
+      "total_resonance": 1439.58,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 152,
+      "psi_e": 541.71,
+      "suppression": 0.8,
+      "total_resonance": 1447.44,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 153,
+      "psi_e": 542.41,
+      "suppression": 0.8,
+      "total_resonance": 1455.29,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 154,
+      "psi_e": 543.11,
+      "suppression": 0.8,
+      "total_resonance": 1463.15,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 155,
+      "psi_e": 543.81,
+      "suppression": 0.8,
+      "total_resonance": 1471.0,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 156,
+      "psi_e": 544.5,
+      "suppression": 0.8,
+      "total_resonance": 1478.85,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 157,
+      "psi_e": 545.18,
+      "suppression": 0.8,
+      "total_resonance": 1486.7,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 158,
+      "psi_e": 545.85,
+      "suppression": 0.8,
+      "total_resonance": 1494.55,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 159,
+      "psi_e": 546.52,
+      "suppression": 0.8,
+      "total_resonance": 1502.39,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 160,
+      "psi_e": 547.19,
+      "suppression": 0.8,
+      "total_resonance": 1510.24,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 161,
+      "psi_e": 547.85,
+      "suppression": 0.8,
+      "total_resonance": 1518.08,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 162,
+      "psi_e": 548.5,
+      "suppression": 0.8,
+      "total_resonance": 1525.93,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 163,
+      "psi_e": 549.15,
+      "suppression": 0.8,
+      "total_resonance": 1533.77,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 164,
+      "psi_e": 549.79,
+      "suppression": 0.8,
+      "total_resonance": 1541.61,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 165,
+      "psi_e": 550.43,
+      "suppression": 0.8,
+      "total_resonance": 1549.45,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 166,
+      "psi_e": 551.06,
+      "suppression": 0.8,
+      "total_resonance": 1557.29,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 167,
+      "psi_e": 551.68,
+      "suppression": 0.8,
+      "total_resonance": 1565.12,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 168,
+      "psi_e": 552.3,
+      "suppression": 0.8,
+      "total_resonance": 1572.96,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 169,
+      "psi_e": 552.92,
+      "suppression": 0.8,
+      "total_resonance": 1580.8,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 170,
+      "psi_e": 553.53,
+      "suppression": 0.8,
+      "total_resonance": 1588.63,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 171,
+      "psi_e": 554.13,
+      "suppression": 0.8,
+      "total_resonance": 1596.46,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 172,
+      "psi_e": 554.74,
+      "suppression": 0.8,
+      "total_resonance": 1604.29,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 173,
+      "psi_e": 555.33,
+      "suppression": 0.8,
+      "total_resonance": 1612.13,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 174,
+      "psi_e": 555.92,
+      "suppression": 0.8,
+      "total_resonance": 1619.96,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 175,
+      "psi_e": 556.51,
+      "suppression": 0.8,
+      "total_resonance": 1627.78,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 176,
+      "psi_e": 557.09,
+      "suppression": 0.8,
+      "total_resonance": 1635.61,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 177,
+      "psi_e": 557.66,
+      "suppression": 0.8,
+      "total_resonance": 1643.44,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 178,
+      "psi_e": 558.24,
+      "suppression": 0.8,
+      "total_resonance": 1651.26,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 179,
+      "psi_e": 558.8,
+      "suppression": 0.8,
+      "total_resonance": 1659.09,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 180,
+      "psi_e": 559.37,
+      "suppression": 0.8,
+      "total_resonance": 1666.91,
+      "dominant_freq": "369 Hz"
+    }
+  ]
+}

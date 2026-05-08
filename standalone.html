@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Essentium System - Odin Hierarchy</title>
+    <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
+    <style>
+        /* Tailwind-like minimal styles (no build needed) */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #09090b; color: white; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; padding: 1.5rem; }
+        .card { background: #18181b; border: 1px solid #27272a; border-radius: 1rem; padding: 1.5rem; margin-bottom: 1.5rem; }
+        .flex { display: flex; }
+        .justify-between { justify-content: space-between; }
+        .items-center { align-items: center; }
+        .gap-2 { gap: 0.5rem; }
+        .gap-4 { gap: 1rem; }
+        .gap-6 { gap: 1.5rem; }
+        .grid { display: grid; }
+        .grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+        .text-sm { font-size: 0.875rem; }
+        .text-xs { font-size: 0.75rem; }
+        .text-5xl { font-size: 3rem; font-weight: 700; }
+        .text-zinc-400 { color: #a1a1aa; }
+        .text-emerald-400 { color: #34d399; }
+        .text-rose-400 { color: #f43f5e; }
+        .bg-zinc-800 { background: #27272a; }
+        .bg-zinc-900 { background: #18181b; }
+        .bg-emerald-600 { background: #059669; }
+        .bg-emerald-700 { background: #047857; }
+        .bg-rose-600 { background: #e11d48; }
+        .bg-amber-600 { background: #d97706; }
+        .bg-blue-600 { background: #2563eb; }
+        .bg-sky-600 { background: #0284c7; }
+        .hover\:bg-emerald-500:hover { background: #10b981; }
+        .hover\:bg-rose-500:hover { background: #f43f5e; }
+        .hover\:bg-amber-500:hover { background: #f59e0b; }
+        .hover\:bg-blue-500:hover { background: #3b82f6; }
+        .rounded-xl { border-radius: 0.75rem; }
+        .rounded-2xl { border-radius: 1rem; }
+        .p-4 { padding: 1rem; }
+        .p-5 { padding: 1.25rem; }
+        .p-6 { padding: 1.5rem; }
+        .px-4 { padding-left: 1rem; padding-right: 1rem; }
+        .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+        .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+        .w-full { width: 100%; }
+        .mb-2 { margin-bottom: 0.5rem; }
+        .mb-4 { margin-bottom: 1rem; }
+        .mt-2 { margin-top: 0.5rem; }
+        .mt-4 { margin-top: 1rem; }
+        .mt-6 { margin-top: 1.5rem; }
+        .pt-4 { padding-top: 1rem; }
+        .text-center { text-align: center; }
+        .font-mono { font-family: monospace; }
+        .font-bold { font-weight: 700; }
+        .font-semibold { font-weight: 600; }
+        .uppercase { text-transform: uppercase; }
+        .tracking-widest { letter-spacing: 0.1em; }
+        .border-b { border-bottom-width: 1px; border-color: #27272a; }
+        .pb-3 { padding-bottom: 0.75rem; }
+        button { transition: all 0.2s; cursor: pointer; border: none; }
+        input { background: #27272a; color: white; border: none; outline: none; }
+        .max-h-96 { max-height: 24rem; overflow-y: auto; }
+        .space-y-2 > * + * { margin-top: 0.5rem; }
+        .space-y-3 > * + * { margin-top: 0.75rem; }
+        .space-y-4 > * + * { margin-top: 1rem; }
+        .space-y-6 > * + * { margin-top: 1.5rem; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        class KRFSelfHealingEngine {
+            constructor() {
+                this.truth_map = new Map([
+                    ["Irawo Joseph Peretun", "Odin"],
+                    ["Wanna B", "Odin"],
+                    ["Millano", "Odin"],
+                    ["Ibidun O.T.O", "DJANGO SOUND"],
+                    ["Dablixx", "Ibidun O.T.O"],
+                    ["krf", "Ibidun O.T.O"],
+                    ["KNG DRIZZ", "DJANGO SOUND"],
+                ]);
+                this.forbidden = new Set(["Millano|Irawo Joseph Peretun"]);
+                this.repair_log = [];
+            }
+            resolve(node) {
+                while (this.truth_map.has(node)) node = this.truth_map.get(node);
+                return node;
+            }
+            detect_and_fix(a, b) {
+                const a_root = this.resolve(a);
+                const b_root = this.resolve(b);
+                const pair = `${a_root}|${b_root}`;
+                if (this.forbidden.has(pair)) {
+                    this.repair_log.push({
+                        issue: "FORBIDDEN_RELATIONSHIP",
+                        a, b,
+                        action: "LINK_REMOVED",
+                        resolution: "Millano is the correct name only",
+                        timestamp: new Date().toLocaleTimeString(),
+                    });
+                    return null;
+                }
+                return { a: a_root, b: b_root };
+            }
+        }
+
+        function App() {
+            const [esstBalance, setEsstBalance] = useState(492);
+            const [logs, setLogs] = useState([]);
+            const [ledger, setLedger] = useState([]);
+            const [state, setState] = useState("stable");
+            const [growthEngineOn, setGrowthEngineOn] = useState(false);
+            const [securityPin] = useState("0000");
+            const [isLocked, setIsLocked] = useState(true);
+            const [enteredPin, setEnteredPin] = useState("");
+
+            const [transferAmount, setTransferAmount] = useState(0);
+            const [transferType, setTransferType] = useState("send");
+            const [recipientAddress, setRecipientAddress] = useState("");
+            const [redeemAmount, setRedeemAmount] = useState(0);
+
+            const [healingEngine] = useState(() => new KRFSelfHealingEngine());
+
+            const PEG_USD = 2.5;
+            const USD_TO_NGN = 1600;
+            const autoMintRules = { deep: 2, medium: 1, light: 0.5 };
+
+            useEffect(() => {
+                const savedData = localStorage.getItem("esstSystem");
+                if (savedData) {
+                    const parsed = JSON.parse(savedData);
+                    setEsstBalance(parsed.esstBalance || 492);
+                    setLogs(parsed.logs || []);
+                    setLedger(parsed.ledger || []);
+                    setState(parsed.state || "stable");
+                    setGrowthEngineOn(parsed.growthEngineOn || false);
+                }
+            }, []);
+
+            useEffect(() => {
+                const data = { esstBalance, logs, ledger, state, growthEngineOn };
+                localStorage.setItem("esstSystem", JSON.stringify(data));
+            }, [esstBalance, logs, ledger, state, growthEngineOn]);
+
+            useEffect(() => {
+                if (!growthEngineOn) return;
+                const interval = setInterval(() => {
+                    const passiveGain = Number((Math.random() * 0.8 + 0.3).toFixed(2));
+                    setEsstBalance(prev => prev + passiveGain);
+                    addLog("Passive Resonance Growth", passiveGain);
+                    addLedgerEntry("Passive Growth", passiveGain, "369 Hz - Tesla Pulse");
+                }, 8000);
+                return () => clearInterval(interval);
+            }, [growthEngineOn]);
+
+            const addLog = (label, gain) => {
+                setLogs(prev => [{ label, gain, time: new Date().toLocaleTimeString() }, ...prev.slice(0, 9)]);
+            };
+
+            const addLedgerEntry = (type, amount, freq, meta = "") => {
+                const healingResult = healingEngine.detect_and_fix(type, freq);
+                if (!healingResult) {
+                    addLog("Self-Healing: Forbidden Link Removed", 0);
+                    return;
+                }
+                const txHash = `0x${Math.random().toString(16).slice(2, 14)}...`;
+                const entry = {
+                    id: Date.now(),
+                    type,
+                    amount,
+                    freq,
+                    time: new Date().toLocaleTimeString(),
+                    txHash,
+                    block: Math.floor(Math.random() * 10000) + 17489200,
+                    meta: meta || undefined,
+                };
+                setLedger(prev => [entry, ...prev.slice(0, 29)]);
+            };
+
+            const handleAction = (type) => {
+                let gain = 0, freq = "";
+                if (type === "deep") { gain = 5; freq = "99.9 Hz - Dablixx"; }
+                if (type === "medium") { gain = 2; freq = "200 Hz - TROD"; }
+                if (type === "light") { gain = 1; freq = "0.7 Hz - Django Sound"; }
+                const autoMint = autoMintRules[type] || 0;
+                const totalGain = gain + autoMint;
+
+                if (state === "low" && (type === "medium" || type === "light")) {
+                    const recovery = 2;
+                    addLog("Recovery Boost", recovery);
+                    addLedgerEntry("Recovery Boost", recovery, "369 Hz - Tesla Pulse");
+                    setState("stable");
+                } else {
+                    addLog(type.toUpperCase(), totalGain);
+                    addLedgerEntry(type.toUpperCase() + " Action", totalGain, freq, autoMint > 0 ? `+${autoMint} auto-mint` : "");
+                }
+                setEsstBalance(prev => prev + totalGain);
+            };
+
+            const handleStability = () => {
+                const gain = 1;
+                addLog("Stability Hold", gain);
+                addLedgerEntry("Stability Hold", gain, "369 Hz - Tesla Pulse");
+                setEsstBalance(prev => prev + gain);
+            };
+
+            const handleTransfer = () => {
+                if (transferAmount <= 0) return;
+                if (transferType === "send") {
+                    if (transferAmount > esstBalance) return;
+                    setEsstBalance(prev => prev - transferAmount);
+                    addLog(`Sent ${transferAmount} ESST`, -transferAmount);
+                    addLedgerEntry("Send Transfer", -transferAmount, "200 Hz - TROD", `To: ${recipientAddress || "external"}`);
+                } else {
+                    addLog(`Received ${transferAmount} ESST`, transferAmount);
+                    addLedgerEntry("Receive Transfer", transferAmount, "99.9 Hz - Dablixx", `From: ${recipientAddress || "external"}`);
+                    setEsstBalance(prev => prev + transferAmount);
+                }
+                setTransferAmount(0);
+                setRecipientAddress("");
+            };
+
+            const handleRedeem = () => {
+                if (redeemAmount <= 0 || redeemAmount > esstBalance) return;
+                const usdValue = redeemAmount * PEG_USD;
+                const ngnValue = usdValue * USD_TO_NGN;
+                setEsstBalance(prev => prev - redeemAmount);
+                addLog(`Redeemed ${redeemAmount} ESST`, -redeemAmount);
+                addLedgerEntry("Redemption (Gateway)", -redeemAmount, "369 Hz - Tesla Pulse", `$${usdValue.toFixed(2)} USD / ₦${ngnValue.toLocaleString()} NGN`);
+                setRedeemAmount(0);
+            };
+
+            const stressTest = (scenario) => {
+                if (scenario === "growth") {
+                    const gain = Math.floor(Math.random() * 25) + 15;
+                    setEsstBalance(prev => prev + gain);
+                    addLog("Stress Test: Massive Growth", gain);
+                    addLedgerEntry("Stress Growth", gain, "369 Hz - Tesla Pulse");
+                }
+                if (scenario === "loss") {
+                    const loss = Math.floor(Math.random() * 18) + 8;
+                    if (esstBalance >= loss) {
+                        setEsstBalance(prev => prev - loss);
+                        addLog("Stress Test: Simulated Loss", -loss);
+                        addLedgerEntry("Stress Loss", -loss, "200 Hz - TROD");
+                    }
+                }
+                if (scenario === "volatility") {
+                    const change = Number((Math.random() * 30 - 15).toFixed(1));
+                    setEsstBalance(prev => Math.max(0, prev + change));
+                    addLog("Stress Test: Volatility", change);
+                    addLedgerEntry("Stress Volatility", change, "99.9 Hz - Dablixx");
+                }
+            };
+
+            const usd = esstBalance * PEG_USD;
+            const ngn = usd * USD_TO_NGN;
+
+            const exportWallet = () => {
+                const exportData = {
+                    timestamp: new Date().toISOString(),
+                    esstBalance,
+                    usd: usd.toFixed(2),
+                    ngn: ngn.toLocaleString(),
+                    pegUsd: PEG_USD,
+                    state,
+                    ledger,
+                    logs,
+                    growthEngineOn,
+                    note: "Essentium Wallet Export - Final Odin Hierarchy (Ibidun O.T.O = DJANGO SOUND, krf alias)"
+                };
+                const dataStr = JSON.stringify(exportData, null, 2);
+                const dataUri = `data:application/json;charset=utf-8,${encodeURIComponent(dataStr)}`;
+                const fileName = `essentium-wallet-export-${new Date().toISOString().slice(0,10)}.json`;
+                const link = document.createElement('a');
+                link.setAttribute('href', dataUri);
+                link.setAttribute('download', fileName);
+                link.click();
+            };
+
+            return (
+                <div className="p-6 space-y-6" style={{ background: "#09090b", minHeight: "100vh" }}>
+                    <div className="flex justify-between items-center">
+                        <h1 className="text-2xl font-bold">Essentium System (ESST) — Final Odin Hierarchy</h1>
+                        <button onClick={exportWallet} className="bg-zinc-800 px-4 py-2 rounded-xl text-sm">Export Wallet</button>
+                    </div>
+
+                    {/* Balance */}
+                    <div className="card">
+                        <p className="text-sm text-zinc-400">ESST Balance (Locked Peg $2.50 USD)</p>
+                        <p className="text-5xl font-bold mt-2">{esstBalance.toFixed(2)} ESST</p>
+                        <div className="flex gap-6 mt-4 text-lg">
+                            <p>${usd.toFixed(2)} USD</p>
+                            <p>₦{ngn.toLocaleString()} NGN</p>
+                        </div>
+                    </div>
+
+                    {/* Security PIN */}
+                    {isLocked && (
+                        <div className="card">
+                            <p className="font-semibold mb-4">Security PIN Required (default: 0000)</p>
+                            <input type="password" value={enteredPin} onChange={(e) => setEnteredPin(e.target.value)} placeholder="Enter 4-digit PIN" className="w-full bg-zinc-800 text-white p-4 rounded-xl text-2xl font-mono mb-4" maxLength={4} />
+                            <button onClick={() => { if (enteredPin === securityPin) { setIsLocked(false); setEnteredPin(""); } else alert("Incorrect PIN"); }} className="w-full bg-emerald-600 py-3 rounded-xl">Unlock Dashboard</button>
+                        </div>
+                    )}
+
+                    {!isLocked && (
+                        <>
+                            {/* Growth Engine */}
+                            <div className="flex justify-between items-center bg-zinc-900 p-4 rounded-2xl">
+                                <div><span className="font-semibold">Real-Time Growth Engine</span><p className="text-xs text-zinc-400">Passive resonance (0.3–1.1 ESST every 8s)</p></div>
+                                <button onClick={() => setGrowthEngineOn(!growthEngineOn)} className={`px-6 py-2 rounded-xl font-medium ${growthEngineOn ? "bg-emerald-600" : "bg-zinc-700"}`}>{growthEngineOn ? "ON" : "OFF"}</button>
+                            </div>
+
+                            {/* Send / Receive */}
+                            <div className="card">
+                                <h2 className="font-semibold mb-4">Send / Receive ESST</h2>
+                                <div className="flex gap-4 mb-4">
+                                    <button onClick={() => setTransferType("send")} className={`flex-1 py-3 rounded-xl ${transferType === "send" ? "bg-rose-600" : "bg-zinc-700"}`}>SEND</button>
+                                    <button onClick={() => setTransferType("receive")} className={`flex-1 py-3 rounded-xl ${transferType === "receive" ? "bg-emerald-600" : "bg-zinc-700"}`}>RECEIVE</button>
+                                </div>
+                                <div className="space-y-4">
+                                    <input type="number" value={transferAmount} onChange={(e) => setTransferAmount(Number(e.target.value))} className="w-full bg-zinc-800 text-white p-4 rounded-xl text-3xl font-mono" placeholder="Amount" />
+                                    {transferType === "send" && <input type="text" value={recipientAddress} onChange={(e) => setRecipientAddress(e.target.value)} className="w-full bg-zinc-800 text-white p-4 rounded-xl font-mono" placeholder="Recipient Address (0x...)" />}
+                                    <button onClick={handleTransfer} className={`w-full py-4 rounded-2xl font-medium ${transferType === "send" ? "bg-rose-600 hover:bg-rose-500" : "bg-emerald-600 hover:bg-emerald-500"}`}>{transferType === "send" ? "Send ESST" : "Confirm Receive"}</button>
+                                </div>
+                            </div>
+
+                            {/* Redemption Gateway */}
+                            <div className="card">
+                                <h2 className="font-semibold mb-4">Redemption Gateway</h2>
+                                <div className="flex gap-4 items-end">
+                                    <div className="flex-1">
+                                        <p className="text-sm text-zinc-400 mb-1">Amount to Redeem</p>
+                                        <input type="number" value={redeemAmount} onChange={(e) => setRedeemAmount(Number(e.target.value))} className="w-full bg-zinc-800 text-white p-4 rounded-xl text-3xl font-mono" placeholder="0" />
+                                    </div>
+                                    <button onClick={handleRedeem} className="bg-rose-600 hover:bg-rose-500 text-white px-8 py-4 rounded-2xl font-medium">Redeem</button>
+                                </div>
+                                {redeemAmount > 0 && (
+                                    <div className="mt-6 p-4 bg-zinc-800 rounded-xl">
+                                        <p className="text-sm text-zinc-400">You will receive:</p>
+                                        <p className="text-3xl font-bold">${(redeemAmount * PEG_USD).toFixed(2)} USD</p>
+                                        <p className="text-3xl font-bold">₦{((redeemAmount * PEG_USD) * USD_TO_NGN).toLocaleString()} NGN</p>
+                                    </div>
+                                )}
+                            </div>
+
+                            {/* Stress Test */}
+                            <div className="card">
+                                <h2 className="font-semibold mb-4">Stress Test Panel</h2>
+                                <div className="grid grid-cols-3 gap-4">
+                                    <button onClick={() => stressTest("growth")} className="bg-emerald-700 hover:bg-emerald-600 text-white p-4 rounded-2xl">Growth</button>
+                                    <button onClick={() => stressTest("loss")} className="bg-rose-700 hover:bg-rose-600 text-white p-4 rounded-2xl">Loss</button>
+                                    <button onClick={() => stressTest("volatility")} className="bg-amber-700 hover:bg-amber-600 text-white p-4 rounded-2xl">Volatility</button>
+                                </div>
+                            </div>
+
+                            {/* State */}
+                            <div className="card">
+                                <p className="font-semibold mb-2">Current State</p>
+                                <div className="flex gap-3">
+                                    <button onClick={() => setState("stable")} className="flex-1 bg-emerald-600 hover:bg-emerald-700 px-4 py-3 rounded-xl">Stable</button>
+                                    <button onClick={() => setState("low")} className="flex-1 bg-amber-600 hover:bg-amber-700 px-4 py-3 rounded-xl">Low</button>
+                                    <button onClick={() => setState("critical")} className="flex-1 bg-rose-600 hover:bg-rose-700 px-4 py-3 rounded-xl">Critical</button>
+                                </div>
+                                <p className="mt-4 text-center font-mono uppercase tracking-widest">{state}</p>
+                            </div>
+
+                            {/* Action Buttons */}
+                            <div className="grid grid-cols-3 gap-4">
+                                <button onClick={() => handleAction("deep")} className="bg-emerald-700 hover:bg-emerald-600 text-white p-5 rounded-2xl font-medium">Deep (+5)</button>
+                                <button onClick={() => handleAction("medium")} className="bg-amber-700 hover:bg-amber-600 text-white p-5 rounded-2xl font-medium">Medium (+2)</button>
+                                <button onClick={() => handleAction("light")} className="bg-zinc-700 hover:bg-zinc-600 text-white p-5 rounded-2xl font-medium">Light (+1)</button>
+                            </div>
+
+                            <button onClick={handleStability} className="bg-blue-600 hover:bg-blue-500 text-white p-5 rounded-2xl w-full font-medium">Stability Hold (+1 ESST)</button>
+
+                            {/* Ledger */}
+                            <div className="card">
+                                <h2 className="font-semibold mb-4 flex justify-between items-center">
+                                    Transaction History (Hardened Ledger + Self-Healing)
+                                    <span className="text-xs text-emerald-400 font-mono">#essentium economy • Final Odin</span>
+                                </h2>
+                                <div className="space-y-3 text-sm max-h-96 overflow-y-auto font-mono">
+                                    {ledger.length === 0 ? <p className="text-zinc-500 italic">No transactions yet.</p> :
+                                        ledger.map(entry => (
+                                            <div key={entry.id} className="flex justify-between items-center border-b border-zinc-800 pb-3">
+                                                <div className="flex-1">
+                                                    <div className="text-white font-medium">{entry.type}</div>
+                                                    <div className="text-xs text-zinc-500">{entry.time} • Block {entry.block}</div>
+                                                    {entry.meta && <div className="text-xs text-zinc-400">{entry.meta}</div>}
+                                                </div>
+                                                <div className="text-right">
+                                                    <div className={`font-medium ${entry.amount > 0 ? "text-emerald-400" : "text-rose-400"}`}>{entry.amount > 0 ? "+" : ""}{entry.amount} ESST</div>
+                                                    <div className="text-[10px] text-zinc-500">{entry.freq}</div>
+                                                    <div className="text-[10px] text-zinc-600">{entry.txHash}</div>
+                                                </div>
+                                            </div>
+                                        ))
+                                    }
+                                </div>
+                                {healingEngine.repair_log.length > 0 && (
+                                    <div className="mt-6 pt-4 border-t border-zinc-800">
+                                        <p className="text-xs text-amber-400 mb-2">Self-Healing Repairs (Final Odin Hierarchy Enforced):</p>
+                                        {healingEngine.repair_log.slice(0, 5).map((repair, i) => (
+                                            <p key={i} className="text-xs text-amber-400">• {repair.issue} → {repair.action}</p>
+                                        ))}
+                                    </div>
+                                )}
+                            </div>
+                        </>
+                    )}
+                    <div className="text-center text-xs text-zinc-500 pt-4">
+                        Essentium Economy v4.0 • Stable Peg • Hardened Ledger • KRFSelfHealingEngine • Final Odin Hierarchy (Ibidun O.T.O = DJANGO SOUND, krf alias)
+                    </div>
+                </div>
+            );
+        }
+
+        ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+{
+  "simulation_date": "2026-05-07T09:17:12.225541",
+  "final_psi_e": 468.26,
+  "peak_psi_e": 468.26,
+  "days_simulated": 180,
+  "results": [
+    {
+      "day": 171,
+      "psi_e": 464.53,
+      "suppression": 0.75,
+      "total_resonance": 1179.43,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 172,
+      "psi_e": 464.95,
+      "suppression": 0.75,
+      "total_resonance": 1184.7,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 173,
+      "psi_e": 465.38,
+      "suppression": 0.75,
+      "total_resonance": 1189.97,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 174,
+      "psi_e": 465.8,
+      "suppression": 0.75,
+      "total_resonance": 1195.24,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 175,
+      "psi_e": 466.22,
+      "suppression": 0.75,
+      "total_resonance": 1200.51,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 176,
+      "psi_e": 466.63,
+      "suppression": 0.75,
+      "total_resonance": 1205.78,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 177,
+      "psi_e": 467.04,
+      "suppression": 0.75,
+      "total_resonance": 1211.04,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 178,
+      "psi_e": 467.45,
+      "suppression": 0.75,
+      "total_resonance": 1216.31,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 179,
+      "psi_e": 467.85,
+      "suppression": 0.75,
+      "total_resonance": 1221.57,
+      "dominant_freq": "369 Hz"
+    },
+    {
+      "day": 180,
+      "psi_e": 468.26,
+      "suppression": 0.75,
+      "total_resonance": 1226.83,
+      "dominant_freq": "369 Hz"
+    }
+  ]
+}
