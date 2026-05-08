@@ -1,9 +1,10 @@
+node_modules/
 __pycache__/
 *.pyc
-node_modules/
+.env
 build/
 dist/
-artifacts/
-cache/
-.env
-logs/
+.DS_Store
+essentium_dashboard_data.json
+contract_addresses.json
+*.log
