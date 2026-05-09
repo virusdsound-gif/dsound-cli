@@ -8,3 +8,5 @@ dist/
 essentium_dashboard_data.json
 contract_addresses.json
 *.log
+*.json.bak
+active/backup/

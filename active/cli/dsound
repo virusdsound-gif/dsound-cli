@@ -1,0 +1,51 @@
+#!/bin/bash
+
+COMMAND=$1
+shift
+
+case $COMMAND in
+  status)
+    echo "=== Essentium Grid Status (v11.0) ==="
+    echo "Hierarchy      : Locked"
+    echo "Active Layer   : The Morning Star 🌟"
+    echo "Blockchain     : Ready"
+    echo "Root Frequency : 0.7 Hz"
+    echo "I dey wit you 100."
+    ;;
+
+  blockchain)
+    echo "🔗 Blockchain Status"
+    echo "Network        : Polygon Amoy (recommended)"
+    echo "Main Contract  : EssentiumTrade.sol"
+    echo "Status         : Deployable"
+    echo "Next Action    : Run 'dsound deploy'"
+    ;;
+
+  deploy)
+    echo "🚀 Starting Deployment..."
+    echo "Make sure you have updated deploy.js with bytecode & ABI"
+    echo "Then run: node deploy.js"
+    echo ""
+    echo "Tip: Get POL from https://www.alchemy.com/faucets/polygon-amoy"
+    ;;
+
+  simulate)
+    python essentium_simulation.py
+    ;;
+
+  beat)
+    echo "🎵 Beat generator active (The Morning Star 🌟)"
+    ;;
+
+  *)
+    echo "Essentium CLI v11.0"
+    echo ""
+    echo "Blockchain Commands:"
+    echo "  dsound blockchain   → Blockchain status"
+    echo "  dsound deploy       → Deployment helper"
+    echo ""
+    echo "Other Commands: status, simulate, verify, generate, beat"
+    echo ""
+    echo "I dey wit you 100."
+    ;;
+esac
