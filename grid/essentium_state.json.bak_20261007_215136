@@ -1,0 +1,109 @@
+{
+  "cultural_heritage_nodes": [
+    {
+      "id": "heritage.israel_oludotun_ransome_kuti",
+      "type": "cultural_heritage_node",
+      "status": "SEALED_REFERENCE",
+      "name": "Rev. Canon Israel Oludotun Ransome-Kuti",
+      "relationship": "father_of_fela_anikulapo_kuti",
+      "role": "education_and_cultural_heritage_anchor",
+      "scope": "Essentium cultural layer",
+      "connection_type": "cultural_reference",
+      "historical_basis": [
+        {
+          "claim": "Nigerian educator and Anglican clergyman",
+          "source": null,
+          "verification_status": "UNVERIFIED"
+        },
+        {
+          "claim": "Father of Fela Anikulapo Kuti",
+          "source": null,
+          "verification_status": "UNVERIFIED"
+        },
+        {
+          "claim": "Associated with the educational and cultural history surrounding the Ransome-Kuti family",
+          "source": null,
+          "verification_status": "UNVERIFIED"
+        }
+      ],
+      "verification_status": "UNVERIFIED",
+      "verified_by": null,
+      "essentium_use": {
+        "purpose": "heritage_context",
+        "discipline": [
+          "education",
+          "cultural_memory",
+          "institution_building",
+          "community_service",
+          "historical_continuity"
+        ],
+        "links_to_existing_layer": [
+          "Fela Shrine / New Afrika Shrine — cultural heritage node",
+          "Fela Anikulapo Kuti — musical/cultural reference",
+          "Uzama (Shallipopi) — artist reference",
+          "Django Sound — label",
+          "KNG DRIZZ — artist",
+          "Essentium Grid — infrastructure/grid"
+        ]
+      },
+      "boundary": {
+        "personal_genealogy_claim": false,
+        "bloodline_claim": false,
+        "endorsement_claim": false,
+        "ownership_claim": false,
+        "historical_identity_merge": false
+      },
+      "created_or_updated_at": "2026-10-07T20:50:50.177522+00:00"
+    }
+  ],
+  "grid_audit": [
+    {
+      "event": "HERITAGE_ANCHOR_UPSERT",
+      "target": "heritage.israel_oludotun_ransome_kuti",
+      "timestamp": "2026-10-07T19:46:02.789487+00:00",
+      "source": "israel_oludotun_heritage_anchor.py",
+      "mutation_scope": "cultural_heritage_nodes_only",
+      "mirrortrace": "UNCHANGED",
+      "existing_records_deleted": 0
+    },
+    {
+      "event": "HERITAGE_ANCHOR_UPSERT",
+      "target": "heritage.israel_oludotun_ransome_kuti",
+      "timestamp": "2026-10-07T19:46:58.199121+00:00",
+      "source": "israel_oludotun_heritage_anchor.py",
+      "mutation_scope": "cultural_heritage_nodes_only",
+      "mirrortrace": "UNCHANGED",
+      "existing_records_deleted": 0
+    },
+    {
+      "event": "HERITAGE_ANCHOR_UPSERT",
+      "target": "heritage.israel_oludotun_ransome_kuti",
+      "timestamp": "2026-10-07T19:51:27.469428+00:00",
+      "mutation_scope": "cultural_heritage_nodes_only",
+      "mirrortrace": "UNCHANGED",
+      "existing_records_deleted": 0
+    },
+    {
+      "event": "HERITAGE_ANCHOR_UPSERT",
+      "target": "heritage.israel_oludotun_ransome_kuti",
+      "timestamp": "2026-10-07T20:50:50.177683+00:00",
+      "source": "israel_oludotun_heritage_anchor.py",
+      "mutation_scope": "cultural_heritage_nodes_and_contributors",
+      "mirrortrace": "UNCHANGED",
+      "existing_records_deleted": 0,
+      "verification_status": "UNVERIFIED"
+    }
+  ],
+  "mirrortrace": {
+    "status": "UNVERIFIED"
+  },
+  "contributors": [
+    {
+      "id": "contributor.local_maintainer",
+      "name": "Local Maintainer",
+      "role": "maintainer",
+      "joined": "2026-10-07T20:50:50.177643+00:00"
+    }
+  ],
+  "proposals": []
+}

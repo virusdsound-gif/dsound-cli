@@ -1,0 +1,14 @@
+{
+  "program": "Dablixx Oosha Identity & Music Audit",
+  "version": "1.0.0",
+  "entrypoint": "dablixx_audit.py:main",
+  "input": {
+    "project_root": "/data/data/com.termux/files/home/workspace/dsound-cli",
+    "evidence_file": null
+  },
+  "return_value": 0,
+  "result_line": "AUDIT_COMPLETED",
+  "report_sha256": "c333b3b0320c17bde4ed969efc8c0d9bb3f7e58293226bc2da11a1d4ae0a51b4",
+  "generated_at_utc": "2026-10-26T02:17:13+00:00",
+  "receipt_sha256": "81fb3257df85f5eb08f4023c75e92c445393bb1908d485e2ce028a1aff5178e6"
+}

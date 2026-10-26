@@ -1,0 +1,301 @@
+{
+  "schema": "essentium-grid/2.0",
+  "name": "Essentium Grid",
+  "role": "infrastructure",
+  "anchor_reference": "heritage.new_afrika_shrine",
+  "rule": "Nothing enters without a source. Nothing leaves claiming more than the source supports.",
+  "purity": "Explicit relationship is not inferred relationship. A heritage node is not a party.",
+  "resurrection_note": "The grid resurrects nothing. It records what already survived.",
+  "updated_at": "2026-10-07T21:25:12.602319+00:00",
+  "sources": {
+    "veal": "Michael E. Veal, Fela: The Life and Times of an African Musical Icon (Temple University Press, 2000)",
+    "moore": "Carlos Moore, Fela: This Bitch of a Life (1982; later editions)",
+    "johnson": "Cheryl Johnson-Odim and Nina Emma Mba, For Women and the Nation: Funmilayo Ransome-Kuti of Nigeria (University of Illinois Press, 1997)",
+    "oxford": "Cheryl Johnson-Odim, 'Ransome-Kuti, Funmilayo', Oxford Research Encyclopedia of African History (2018), doi:10.1093/acrefore/9780190277734.013.269",
+    "shrine_site": "felakuti.com/legacy/new-afrika-shrine (family-operated site)",
+    "nut": "Nigeria Union of Teachers — official history and founding records",
+    "awu": "Abeokuta Women's Union — historical records, 1940s"
+  },
+  "contributors": [
+    {
+      "id": "contributor.maintainer",
+      "name": "Ibidun Olamide",
+      "handle": "KNG DRIZZ",
+      "label": "DJANGO Sound",
+      "role": "maintainer",
+      "joined": "2026-10-07"
+    }
+  ],
+  "proposals": [
+    {
+      "id": "proposal.001",
+      "title": "Add New Afrika Shrine node",
+      "status": "CLOSED",
+      "note": "Enacted. Reference only. Shrine is not a party."
+    },
+    {
+      "id": "proposal.002",
+      "title": "Add continuity layer to all heritage nodes",
+      "status": "CLOSED",
+      "note": "Enacted. Records what survived, not what was claimed."
+    },
+    {
+      "id": "proposal.003",
+      "title": "Unify anchor + grid into single file",
+      "status": "CLOSED",
+      "note": "Enacted. One file owns essentium_state.json."
+    }
+  ],
+  "cultural_heritage_nodes": [
+    {
+      "id": "heritage.israel_oludotun_ransome_kuti",
+      "type": "cultural_heritage_node",
+      "status": "SEALED_REFERENCE",
+      "name": "Israel Oludotun Ransome-Kuti",
+      "role": "educator, Anglican clergyman, father of Fela Anikulapo Kuti",
+      "location": "Abeokuta / Nigeria",
+      "connection_type": "cultural_reference",
+      "historical_basis": [
+        {
+          "claim": "Nigerian educator and Anglican clergyman; first president of the Nigeria Union of Teachers.",
+          "source_id": "veal",
+          "source": "Michael E. Veal, Fela: The Life and Times of an African Musical Icon (Temple University Press, 2000)",
+          "verification_status": "UNVERIFIED"
+        },
+        {
+          "claim": "Father of Fela Anikulapo Kuti; husband of Funmilayo Ransome-Kuti.",
+          "source_id": "veal",
+          "source": "Michael E. Veal, Fela: The Life and Times of an African Musical Icon (Temple University Press, 2000)",
+          "verification_status": "UNVERIFIED"
+        }
+      ],
+      "continuity": {
+        "work": "education and teacher organising",
+        "continues_as": [
+          "Nigeria Union of Teachers",
+          "schools he founded and led"
+        ],
+        "status": "institutional_lineage",
+        "source_id": "nut",
+        "source": "Nigeria Union of Teachers — official history and founding records",
+        "verification_status": "UNVERIFIED"
+      },
+      "verified_by": null,
+      "verification_status": "UNVERIFIED",
+      "boundary": {
+        "ownership_claim": false,
+        "endorsement_claim": false,
+        "operational_control": false,
+        "genealogy_claim": false,
+        "party_to_agreement": false,
+        "identity_merge": false
+      }
+    },
+    {
+      "id": "heritage.funmilayo_ransome_kuti",
+      "type": "cultural_heritage_node",
+      "status": "SEALED_REFERENCE",
+      "name": "Funmilayo Ransome-Kuti",
+      "role": "educator, women's rights leader, anti-colonial organiser",
+      "location": "Abeokuta, Nigeria",
+      "connection_type": "cultural_reference",
+      "historical_basis": [
+        {
+          "claim": "Led the Abeokuta Women's Union and the campaign that deposed the Alake over colonial taxation.",
+          "source_id": "johnson",
+          "source": "Cheryl Johnson-Odim and Nina Emma Mba, For Women and the Nation: Funmilayo Ransome-Kuti of Nigeria (University of Illinois Press, 1997)",
+          "verification_status": "UNVERIFIED"
+        },
+        {
+          "claim": "Mother of Fela, Beko, Olikoye, and Dolupo Ransome-Kuti.",
+          "source_id": "oxford",
+          "source": "Cheryl Johnson-Odim, 'Ransome-Kuti, Funmilayo', Oxford Research Encyclopedia of African History (2018), doi:10.1093/acrefore/9780190277734.013.269",
+          "verification_status": "UNVERIFIED"
+        },
+        {
+          "claim": "Born Frances Abigail Olufunmilayo Thomas, 25 October 1900, Abeokuta; died 13 April 1978.",
+          "source_id": "oxford",
+          "source": "Cheryl Johnson-Odim, 'Ransome-Kuti, Funmilayo', Oxford Research Encyclopedia of African History (2018), doi:10.1093/acrefore/9780190277734.013.269",
+          "verification_status": "UNVERIFIED"
+        }
+      ],
+      "continuity": {
+        "work": "women's anti-colonial organising and women's suffrage",
+        "continues_as": [
+          "Abeokuta Women's Union legacy",
+          "Nigerian women's rights movement"
+        ],
+        "status": "movement_lineage",
+        "source_id": "johnson",
+        "source": "Cheryl Johnson-Odim and Nina Emma Mba, For Women and the Nation: Funmilayo Ransome-Kuti of Nigeria (University of Illinois Press, 1997)",
+        "verification_status": "UNVERIFIED"
+      },
+      "verified_by": null,
+      "verification_status": "UNVERIFIED",
+      "boundary": {
+        "ownership_claim": false,
+        "endorsement_claim": false,
+        "operational_control": false,
+        "genealogy_claim": false,
+        "party_to_agreement": false,
+        "identity_merge": false
+      }
+    },
+    {
+      "id": "heritage.fela_anikulapo_kuti",
+      "type": "cultural_heritage_node",
+      "status": "SEALED_REFERENCE",
+      "name": "Fela Anikulapo Kuti",
+      "role": "Afrobeat bandleader, composer, political critic",
+      "location": "Lagos, Nigeria",
+      "connection_type": "cultural_reference",
+      "historical_basis": [
+        {
+          "claim": "Opened the Afrika Shrine in Lagos in the early 1970s as a performance, political, and ritual space.",
+          "source_id": "veal",
+          "source": "Michael E. Veal, Fela: The Life and Times of an African Musical Icon (Temple University Press, 2000)",
+          "verification_status": "UNVERIFIED"
+        },
+        {
+          "claim": "Kalakuta Republic was raided and burned by the military in February 1977.",
+          "source_id": "veal",
+          "source": "Michael E. Veal, Fela: The Life and Times of an African Musical Icon (Temple University Press, 2000)",
+          "verification_status": "UNVERIFIED"
+        },
+        {
+          "claim": "Died 2 August 1997 in Lagos.",
+          "source_id": "veal",
+          "source": "Michael E. Veal, Fela: The Life and Times of an African Musical Icon (Temple University Press, 2000)",
+          "verification_status": "UNVERIFIED"
+        }
+      ],
+      "continuity": {
+        "work": "Afrobeat, political critique, ritual performance",
+        "continues_as": [
+          "New Afrika Shrine",
+          "Femi Kuti",
+          "Seun Kuti",
+          "Egypt 80 and Positive Force"
+        ],
+        "status": "living_institution",
+        "source_id": "veal",
+        "source": "Michael E. Veal, Fela: The Life and Times of an African Musical Icon (Temple University Press, 2000)",
+        "verification_status": "UNVERIFIED"
+      },
+      "verified_by": null,
+      "verification_status": "UNVERIFIED",
+      "boundary": {
+        "ownership_claim": false,
+        "endorsement_claim": false,
+        "operational_control": false,
+        "genealogy_claim": false,
+        "party_to_agreement": false,
+        "identity_merge": false
+      }
+    },
+    {
+      "id": "heritage.new_afrika_shrine",
+      "type": "cultural_heritage_node",
+      "status": "SEALED_REFERENCE",
+      "name": "New Afrika Shrine",
+      "role": "living cultural institution",
+      "location": "Ikeja, Lagos, Nigeria",
+      "connection_type": "cultural_reference",
+      "historical_basis": [
+        {
+          "claim": "Opened in 2000 by the Kuti family, led by Yeni Anikulapo-Kuti and Femi Kuti.",
+          "source_id": "shrine_site",
+          "source": "felakuti.com/legacy/new-afrika-shrine (family-operated site)",
+          "verification_status": "UNVERIFIED"
+        },
+        {
+          "claim": "Family site: about four times the original, capacity about 2,500.",
+          "source_id": "shrine_site",
+          "source": "felakuti.com/legacy/new-afrika-shrine (family-operated site)",
+          "verification_status": "UNVERIFIED"
+        },
+        {
+          "claim": "Family site: Femi plays Thursdays and Sundays when not on tour; most nights have no entrance fee.",
+          "source_id": "shrine_site",
+          "source": "felakuti.com/legacy/new-afrika-shrine (family-operated site)",
+          "verification_status": "UNVERIFIED"
+        }
+      ],
+      "continuity": {
+        "work": "Afrobeat as a living venue and community institution",
+        "continues_as": [
+          "Felabration (annual, October)",
+          "Thursday and Sunday residencies",
+          "ongoing community programming"
+        ],
+        "status": "active",
+        "source_id": "shrine_site",
+        "source": "felakuti.com/legacy/new-afrika-shrine (family-operated site)",
+        "verification_status": "UNVERIFIED"
+      },
+      "verified_by": null,
+      "verification_status": "UNVERIFIED",
+      "boundary": {
+        "ownership_claim": false,
+        "endorsement_claim": false,
+        "operational_control": false,
+        "genealogy_claim": false,
+        "party_to_agreement": false,
+        "identity_merge": false
+      },
+      "founded": "2000",
+      "founded_by": [
+        "Femi Kuti",
+        "Yeni Anikulapo-Kuti"
+      ],
+      "references": "Fela Anikulapo Kuti",
+      "relationship": "living_cultural_institution"
+    },
+    {
+      "id": "heritage_resurrection.israel_oludotun_ransome_kuti",
+      "type": "heritage_resurrection",
+      "status": "ACTIVE",
+      "source_node": "heritage.israel_oludotun_ransome_kuti",
+      "subject": "Rev. Canon Israel Oludotun Ransome-Kuti",
+      "meaning": "heritage_continuity_and_reactivation",
+      "action": [
+        "restore heritage context to active Grid visibility",
+        "preserve documented historical relationships",
+        "carry educational and cultural principles forward",
+        "connect the heritage node to relevant downstream cultural nodes"
+      ],
+      "continuity_chain": [
+        "Israel Oludotun Ransome-Kuti",
+        "Fela Anikulapo Kuti",
+        "Fela Shrine / New Afrika Shrine",
+        "Essentium cultural layer"
+      ],
+      "linked_existing_nodes": [
+        "heritage.israel_oludotun_ransome_kuti",
+        "Uzama",
+        "Django Sound",
+        "KNG DRIZZ",
+        "Essentium Grid"
+      ],
+      "definition": "Heritage resurrection means reactivating cultural memory, context, principles, relationships and documented legacy inside the living Grid.",
+      "boundary": "This is cultural continuity, not a claim that a deceased person has physically returned.",
+      "activated_at": "2026-10-07T22:31:34"
+    }
+  ],
+  "agreement_layer": {
+    "note": "Agreements live elsewhere. This file cannot create one.",
+    "shrine_is_party": false
+  },
+  "content_hash": "b42a15764224cc023ad54670dc715d3263eceda66d261e8ee36b2e233c8e3b25",
+  "grid_audit": [
+    {
+      "event": "HERITAGE_RESURRECTION_ACTIVATED",
+      "source": "heritage.israel_oludotun_ransome_kuti",
+      "target": "heritage_resurrection.israel_oludotun_ransome_kuti",
+      "timestamp": "2026-10-07T22:31:34",
+      "meaning": "heritage_continuity_and_reactivation",
+      "physical_resurrection_claim": false,
+      "mirrortrace": "UNCHANGED"
+    }
+  ]
+}

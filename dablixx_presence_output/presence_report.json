@@ -1,0 +1,20 @@
+{
+  "program": "Dablixx Presence Audit",
+  "version": "1.0.0",
+  "status": "PRESENCE_INVENTORY_COMPLETED",
+  "generated_at_utc": "2026-10-26T02:25:46.171605+00:00",
+  "project_root": "/data/data/com.termux/files/home/workspace/dsound-cli",
+  "counts": {
+    "audio_file": 0,
+    "lyric_subtitle_file": 0,
+    "candidate_record": 0
+  },
+  "records": [],
+  "limitations": [
+    "File presence does not prove authorship or identity.",
+    "This inventory does not analyze audio or interpret lyrics.",
+    "Only the listed file types and candidate record names are inventoried.",
+    "A zero count means no matching file was found by this scan, not proof that the underlying work does not exist.",
+    "Existing project files are read-only; output is written separately."
+  ]
+}

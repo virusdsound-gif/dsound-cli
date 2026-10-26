@@ -1,0 +1,41 @@
+{
+  "entries": [
+    {
+      "index": 0,
+      "at": "2026-10-05T21:19:15.030086+00:00",
+      "event": "CREATED",
+      "agreement": "AGR-0003",
+      "data": {
+        "parties": "Erigga + KNG DRIZZ",
+        "objective": "Warri-Lagos unity",
+        "obligation": "One track together"
+      },
+      "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "hash": "406136e617b0a1a969393b08d7ae5ebc6805e36925249a7b6fdee34b9febb3ae"
+    },
+    {
+      "index": 1,
+      "at": "2026-10-05T21:19:17.311295+00:00",
+      "event": "EVIDENCE",
+      "agreement": "AGR-0001",
+      "data": {
+        "description": "Studio session recorded"
+      },
+      "prev_hash": "406136e617b0a1a969393b08d7ae5ebc6805e36925249a7b6fdee34b9febb3ae",
+      "hash": "ce3b8b51cf46ec21c93c73dc0f02bad41fb65ebc927eed62fbca344809abe19c"
+    },
+    {
+      "index": 2,
+      "at": "2026-10-05T21:20:53.987122+00:00",
+      "event": "CREATED",
+      "agreement": "AGR-0004",
+      "data": {
+        "parties": "Erigga + KNG DRIZZ",
+        "objective": "Warri-Lagos unity",
+        "obligation": "One track together"
+      },
+      "prev_hash": "ce3b8b51cf46ec21c93c73dc0f02bad41fb65ebc927eed62fbca344809abe19c",
+      "hash": "3d8fc46f970433b8a03cdb4e596982bb3ca514d311ecfc47cda1eadd39317e1c"
+    }
+  ]
+}

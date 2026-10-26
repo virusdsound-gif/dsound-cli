@@ -1,0 +1,61 @@
+{
+  "cultural_heritage_nodes": [
+    {
+      "id": "heritage.israel_oludotun_ransome_kuti",
+      "type": "cultural_heritage_node",
+      "status": "SEALED_REFERENCE",
+      "name": "Rev. Canon Israel Oludotun Ransome-Kuti",
+      "relationship": "father_of_fela_anikulapo_kuti",
+      "role": "education_and_cultural_heritage_anchor",
+      "scope": "Essentium cultural layer",
+      "connection_type": "cultural_reference",
+      "essentium_links": [
+        "Fela Anikulapo Kuti",
+        "Fela Shrine / New Afrika Shrine",
+        "Uzama (Shallipopi)",
+        "Django Sound",
+        "KNG DRIZZ",
+        "Essentium Grid"
+      ],
+      "boundary": {
+        "personal_genealogy_claim": false,
+        "bloodline_claim": false,
+        "endorsement_claim": false,
+        "ownership_claim": false,
+        "historical_identity_merge": false
+      },
+      "updated_at": "2026-10-07T19:51:27.469336+00:00"
+    }
+  ],
+  "grid_audit": [
+    {
+      "event": "HERITAGE_ANCHOR_UPSERT",
+      "target": "heritage.israel_oludotun_ransome_kuti",
+      "timestamp": "2026-10-07T19:46:02.789487+00:00",
+      "source": "israel_oludotun_heritage_anchor.py",
+      "mutation_scope": "cultural_heritage_nodes_only",
+      "mirrortrace": "UNCHANGED",
+      "existing_records_deleted": 0
+    },
+    {
+      "event": "HERITAGE_ANCHOR_UPSERT",
+      "target": "heritage.israel_oludotun_ransome_kuti",
+      "timestamp": "2026-10-07T19:46:58.199121+00:00",
+      "source": "israel_oludotun_heritage_anchor.py",
+      "mutation_scope": "cultural_heritage_nodes_only",
+      "mirrortrace": "UNCHANGED",
+      "existing_records_deleted": 0
+    },
+    {
+      "event": "HERITAGE_ANCHOR_UPSERT",
+      "target": "heritage.israel_oludotun_ransome_kuti",
+      "timestamp": "2026-10-07T19:51:27.469428+00:00",
+      "mutation_scope": "cultural_heritage_nodes_only",
+      "mirrortrace": "UNCHANGED",
+      "existing_records_deleted": 0
+    }
+  ],
+  "mirrortrace": {
+    "status": "UNVERIFIED"
+  }
+}

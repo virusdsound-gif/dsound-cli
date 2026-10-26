@@ -1,0 +1,12 @@
+{
+  "entrypoint": "dablixx_presence.py:main",
+  "return_value": 0,
+  "result_line": "PRESENCE_INVENTORY_COMPLETED",
+  "report_sha256": "7cd598b86a9df18f5eacfb4d1889f033329a1bd69e763ec5a22d90396e94ae48",
+  "counts": {
+    "audio_file": 0,
+    "lyric_subtitle_file": 0,
+    "candidate_record": 0
+  },
+  "receipt_sha256": "d166fe5ae4ebdb13b1dbe238cd6bd336205ef26a711ef52433993a0cf4d42c94"
+}

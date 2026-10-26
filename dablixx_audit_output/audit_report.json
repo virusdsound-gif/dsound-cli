@@ -1,0 +1,70 @@
+{
+  "program": "Dablixx Oosha Identity & Music Audit",
+  "version": "1.0.0",
+  "run_status": "AUDIT_COMPLETED",
+  "execution_mode": "local read-only audit",
+  "generated_at_utc": "2026-10-26T02:17:13+00:00",
+  "project_root": "/data/data/com.termux/files/home/workspace/dsound-cli",
+  "python_version": "3.13.13",
+  "identity_assignments": {
+    "Django Sound": {
+      "frequency_hz": 0.7,
+      "layer": "Royal Silence Root",
+      "role": "label/root"
+    },
+    "Dablixx Oosha": {
+      "frequency_hz": 99.9,
+      "layer": "Pain Alchemy",
+      "role": "artist"
+    },
+    "KNG DRIZZ": {
+      "frequency_hz": 200,
+      "layer": "Spirit Bridge",
+      "role": "artist"
+    },
+    "Vivian": {
+      "frequency_hz": 369,
+      "layer": "Tesla Return Gate / neutral fortress",
+      "role": "protection concept"
+    }
+  },
+  "symbolic_relationships": [
+    {
+      "identity": "Femi IBIDUN OLAMIDE",
+      "artist": "KNG DRIZZ",
+      "relationship": "symbolic twin framework",
+      "status": "user-provided symbolic record; not independently verified"
+    },
+    {
+      "identity": "Femi IBIDUN Olamilekan",
+      "artist": "Dablixx Oosha",
+      "relationship": "symbolic twin framework",
+      "status": "user-provided symbolic record; not independently verified"
+    }
+  ],
+  "repository_documentation_checks": {
+    "Dablixx Oosha": false,
+    "99.9 Hz": false,
+    "Pain Alchemy": false,
+    "KNG DRIZZ": false,
+    "200 Hz": false,
+    "Django Sound": false,
+    "0.7 Hz": false,
+    "369 Hz / Vivian": false
+  },
+  "candidate_files_read_only_inspected": [],
+  "track_evidence_results": [],
+  "evidence_file": null,
+  "evidence_file_sha256": null,
+  "issues": [
+    "No track-level evidence supplied; catalogue and lyrical fingerprint remain unverified.",
+    "No candidate documentation/data files were found within the scanned project."
+  ],
+  "limitations": [
+    "Frequency values are symbolic project assignments; this program does not measure audio frequency.",
+    "A listed symbolic relationship is not proof of literal identity or biological twinship.",
+    "This scaffold does not infer lyrics, artist authorship, or catalogue completeness.",
+    "No existing project, protected, or sealed file is changed.",
+    "Repository documentation presence is not runtime verification."
+  ]
+}

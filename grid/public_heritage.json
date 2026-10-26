@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-10-07T20:52:02.728914+00:00",
+  "generator": "essentium-grid/public-exporter",
+  "policy": "This file contains cultural heritage references only. No genealogy, bloodline, endorsement, or ownership is claimed.",
+  "nodes": [
+    {
+      "id": "heritage.israel_oludotun_ransome_kuti",
+      "name": "Rev. Canon Israel Oludotun Ransome-Kuti",
+      "role": "education_and_cultural_heritage_anchor",
+      "connection_type": "cultural_reference",
+      "verification_status": "UNVERIFIED",
+      "historical_basis": [
+        {
+          "claim": "Nigerian educator and Anglican clergyman",
+          "source": null,
+          "verification_status": "UNVERIFIED"
+        },
+        {
+          "claim": "Father of Fela Anikulapo Kuti",
+          "source": null,
+          "verification_status": "UNVERIFIED"
+        },
+        {
+          "claim": "Associated with the educational and cultural history surrounding the Ransome-Kuti family",
+          "source": null,
+          "verification_status": "UNVERIFIED"
+        }
+      ],
+      "boundary": {
+        "personal_genealogy_claim": false,
+        "bloodline_claim": false,
+        "endorsement_claim": false,
+        "ownership_claim": false,
+        "historical_identity_merge": false
+      }
+    }
+  ]
+}
